@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/linear_padding">
+
+    <TextView
+        android:id="@+id/texto_conectar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/tv_conectar"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/input_usuario"
+        android:hint="@string/et_correo"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/input_contrasena"
+        android:hint="@string/et_contrasena"
+        android:inputType="textPassword" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:id="@+id/boton_iniciar_sesion"
+        android:text="@string/boton_iniciar_sesion"
+        style="?android:attr/buttonStyleSmall"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:id="@+id/texto_olvidaste_contrasena"
+        android:text="@string/tv_olvidaste_contrasena"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0e8aee" />
+</LinearLayout>

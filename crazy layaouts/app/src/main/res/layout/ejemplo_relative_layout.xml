@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/linear_padding">
+
+    <EditText
+        android:id="@+id/input_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginBottom="@dimen/et_margin"
+        android:ems="10"
+        android:hint="@string/et_nombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/input_apellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_nombre"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="@string/et_apellidos"
+        android:inputType="textPersonName"
+        android:layout_margin="@dimen/et_margin"/>
+
+    <TextView
+        android:id="@+id/texto_estado_civil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_apellidos"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/et_margin"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="@dimen/et_margin"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/tv_estado_civil"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/texto_cargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_apellidos"
+        android:layout_margin="@dimen/et_margin"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginBottom="@dimen/et_margin"
+        android:layout_toEndOf="@+id/texto_estado_civil"
+        android:layout_toRightOf="@id/texto_estado_civil"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/tv_cargo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner_cargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto_cargo"
+        android:layout_alignLeft="@+id/texto_cargo"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginBottom="@dimen/et_margin"
+        android:entries="@array/lista_cargo"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spinner_estado_civil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto_estado_civil"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginBottom="@dimen/et_margin"
+        android:layout_toLeftOf="@+id/spinner_cargo"
+        android:entries="@array/lista_estado_civil" />
+</RelativeLayout>
